@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cocktail_app_nav"
+    app:startDestination="@id/myCocktails">
+
+    <fragment
+        android:id="@+id/myCocktails"
+        android:name="com.github.iaroslavomelianenko.cocktailbar.view.fragments.MyCocktails"
+        android:label="fragment_my_cocktails"
+        tools:layout="@layout/fragment_my_cocktails" >
+        <action
+            android:id="@+id/action_myCocktails_to_myCocktailsEmpty"
+            app:destination="@id/myCocktailsEmpty" />
+        <action
+            android:id="@+id/action_myCocktails_to_addCocktail"
+            app:destination="@id/addCocktail" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCocktailsEmpty"
+        android:name="com.github.iaroslavomelianenko.cocktailbar.view.fragments.MyCocktailsEmpty"
+        android:label="fragment_my_cocktails_empty"
+        tools:layout="@layout/fragment_my_cocktails_empty" >
+        <action
+            android:id="@+id/action_myCocktailsEmpty_to_addCocktail"
+            app:destination="@id/addCocktail" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCocktail"
+        android:name="com.github.iaroslavomelianenko.cocktailbar.view.fragments.AddCocktail"
+        android:label="fragment_add_cocktail"
+        tools:layout="@layout/fragment_add_cocktail" >
+        <action
+            android:id="@+id/action_addCocktail_to_myCocktails"
+            app:destination="@id/myCocktails" />
+    </fragment>
+</navigation>
