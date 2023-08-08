@@ -4,7 +4,7 @@ Application displays list of your coctails from database.
 
 ## Technologies
 
--   Fragments, Navigation, Coroutines, Room, SQLite
+-   Fragments, Navigation, Coroutines, Lifecycle ViewModel, Room, SQLite
 
 ## Features
 
@@ -12,11 +12,15 @@ Application displays list of your coctails from database.
 -   RecyclerView with your cocktails
 -   Navigation between fragments
 
-## ToDo:
+## ToDo later:
 
--   Add ingridients for cocktails
+-   Add ingridients for cocktails (chipGroup + input dialog)
+-   Add Title field validation
 -   Finish update data
 -   Finish UI
+-   Photo upload
+-   Share button
+-   Item sort in recyclerView
 
 ## Preview
 
