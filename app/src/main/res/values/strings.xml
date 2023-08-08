@@ -13,5 +13,11 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="cocktail_added">Cocktail added</string>
+    <string name="cocktail_updated">Cocktail updated</string>
     <string name="cocktail_needs_a_title">Cocktail needs a title</string>
+    <string name="ingredients_name">Ingredient\'s name</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="add_ingredient">Add ingredient</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
 </resources>

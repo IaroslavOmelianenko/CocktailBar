@@ -24,7 +24,7 @@
             android:gravity="center">
 
             <ImageView
-                android:id="@+id/ivCocktailPhoto"
+                android:id="@+id/ivCocktailPhotoUpdate"
                 android:layout_width="216dp"
                 android:layout_height="204dp"
                 android:layout_marginTop="64dp"
@@ -32,7 +32,7 @@
                 android:src="@drawable/ic_photo" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilCocktailTitle"
+                android:id="@+id/tilCocktailTitleUpdate"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,7 +45,7 @@
                 app:helperText="Add title">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etlCocktailTitle"
+                    android:id="@+id/etlCocktailTitleUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/title" />
@@ -54,7 +54,7 @@
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilCocktailRecipe"
+                android:id="@+id/tilCocktailRecipeUpdate"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -67,7 +67,7 @@
                 app:helperText="@string/optional_field">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etCocktailRecipe"
+                    android:id="@+id/etCocktailRecipeUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="top"
@@ -86,7 +86,7 @@
             </com.google.android.material.chip.ChipGroup>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/tilCocktailDescription"
+                android:id="@+id/tilCocktailDescriptionUpdate"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -99,7 +99,7 @@
                 app:helperText="@string/optional_field">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etCocktailDescription"
+                    android:id="@+id/etCocktailDescriptionUpdate"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:gravity="top"
@@ -108,15 +108,15 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/bSave"
+                android:id="@+id/bUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/rounded_corners_button"
-                android:text="@string/save" />
+                android:text="@string/update" />
 
             <Button
-                android:id="@+id/bCancel"
+                android:id="@+id/bCancelUpdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"

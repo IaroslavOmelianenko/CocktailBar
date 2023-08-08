@@ -12,7 +12,7 @@ import kotlinx.coroutines.launch
 
 class CocktailViewModel(application: Application): AndroidViewModel(application) {
 
-    private val readAllData: LiveData<List<Cocktail>>
+    val readAllData: LiveData<List<Cocktail>>
     private val repository: CocktailRepository
 
     init {

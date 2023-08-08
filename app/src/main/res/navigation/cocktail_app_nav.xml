@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_myCocktails_to_addCocktail"
             app:destination="@id/addCocktail" />
+        <action
+            android:id="@+id/action_myCocktails_to_cocktailDetails"
+            app:destination="@id/cocktailDetails" />
     </fragment>
     <fragment
         android:id="@+id/myCocktailsEmpty"
@@ -33,6 +36,32 @@
         tools:layout="@layout/fragment_add_cocktail" >
         <action
             android:id="@+id/action_addCocktail_to_myCocktails"
+            app:destination="@id/myCocktails" />
+    </fragment>
+    <fragment
+        android:id="@+id/cocktailDetails"
+        android:name="com.github.iaroslavomelianenko.cocktailbar.view.fragments.CocktailDetails"
+        android:label="details"
+        tools:layout="@layout/fragment_cocktail_details">
+        <action
+            android:id="@+id/action_cocktailDetails_to_myCocktails"
+            app:destination="@id/myCocktails" />
+        <argument
+            android:name="currentCocktail"
+            app:argType="com.github.iaroslavomelianenko.cocktailbar.data.model.Cocktail" />
+        <action
+            android:id="@+id/action_cocktailDetails_to_updateCocktail"
+            app:destination="@id/updateCocktail" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateCocktail"
+        android:name="com.github.iaroslavomelianenko.cocktailbar.view.fragments.UpdateCocktail"
+        android:label="update" >
+        <argument
+            android:name="currentCocktail"
+            app:argType="com.github.iaroslavomelianenko.cocktailbar.data.model.Cocktail" />
+        <action
+            android:id="@+id/action_updateCocktail_to_myCocktails"
             app:destination="@id/myCocktails" />
     </fragment>
 </navigation>
