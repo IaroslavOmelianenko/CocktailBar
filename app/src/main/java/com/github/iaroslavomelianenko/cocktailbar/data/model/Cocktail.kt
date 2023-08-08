@@ -12,6 +12,6 @@ data class Cocktail (
     val id: Int,
     val name: String,
     val description: String,
-    val ingredients: String,
+    //val ingredients: String,
     val recipe: String
 ): Parcelable

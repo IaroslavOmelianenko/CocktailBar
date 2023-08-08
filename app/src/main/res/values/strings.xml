@@ -12,4 +12,6 @@
     <string name="optional_field">Optional field</string>
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
+    <string name="cocktail_added">Cocktail added</string>
+    <string name="cocktail_needs_a_title">Cocktail needs a title</string>
 </resources>

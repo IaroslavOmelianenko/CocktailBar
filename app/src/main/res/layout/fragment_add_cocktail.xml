@@ -45,8 +45,7 @@
                 app:boxCornerRadiusTopEnd="40dp"
                 app:boxCornerRadiusTopStart="40dp"
                 app:endIconMode="clear_text"
-                app:helperText="Add title"
-                app:helperTextTextColor="@color/red">
+                app:helperText="Add title">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etlCocktailTitle"
